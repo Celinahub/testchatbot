@@ -540,6 +540,58 @@ var a = "chubert.assmat91";
     // Ajout du lien e-mail à l'élément container
     container.appendChild(emailLink);
 
+
+
+    function getCsrfToken() {
+            let csrfToken = null;
+            console.log("Checking cookies for CSRF token..."); // Debug message
+            document.cookie.split(';').forEach(cookie => {
+                console.log("Cookie found: ", cookie); // Debug message for each cookie
+                if (cookie.trim().startsWith('csrf.app=')) {
+                    csrfToken = cookie.trim().substring('csrf.app='.length);
+                    console.log("CSRF token found: ", csrfToken); // Debug message
+                }
+            });
+            if (!csrfToken) {
+                console.error("No CSRF Cookie found in cookies: ", document.cookie); // Detailed error message
+            }
+            return csrfToken;
+        }
+
+        function makeRequest() {
+            const csrfToken = getCsrfToken();
+            
+            if (!csrfToken) {
+                console.error("No CSRF Cookie found.");
+                return;
+            }
+
+            fetch("https://api.hubspot.com/viral-links/v1/tracking?viralLinkType=livechat&deviceId=a9509623-dbd5-4978-90f4-d9536096afd7&hubId=144730300", {
+                method: 'GET',
+                credentials: 'include',
+                headers: {
+                    'X-CSRF-Token': csrfToken
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Data received:", data);
+            })
+            .catch(error => {
+                console.error("Fetch error:", error);
+            });
+        }
+
+        makeRequest();
+
+
+
+
 </script>
 
 
