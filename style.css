@@ -1,0 +1,2423 @@
+/* Commentaire CSS */
+
+/* Sélecteur */
+/* Style pour toutes les pages */
+
+
+
+/* Style général du body */
+
+body {
+   position: relative; /* Assure que le corps est positionné correctement */
+   margin: 0;
+   padding: 0;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   font-family: Arial, sans-serif;
+   box-sizing: border-box;
+   min-height: 100vh; /* Assure que le corps a au moins la hauteur de la fenêtre du navigateur */
+}
+
+
+/* Utilisez la police Helvetica pour les titres */
+h2, h3 {
+   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* Style PIED DE PAGE */
+
+/* Style du logo rond chez celine */
+.logo-pied-page {
+   height: 170px;
+   width: 170px;
+   margin-top: 25px;
+   margin-bottom: 10px;
+}
+
+/* Style du pied de page */
+.custom-footer-section {
+   padding: 20px; /* Remplissage interne de la section */
+   position: relative; 
+   width: 100%; 
+   background: #143854; /* Couleur de fond du pied de page */
+
+  
+}
+
+.heart-icon {
+   width: 0.8rem; /* Ajustez la taille du SVG */
+   height: 0.8rem; 
+   
+ }
+
+
+
+
+/* Style de la section bordure rayée au dessus du pied de page */
+.striped-section {
+   height: 5px; /* Ajustez la hauteur selon vos besoins */
+   width: 100%; /* La section prend toute la largeur */
+   background: repeating-linear-gradient(
+       45deg, /* Angle des rayures */
+       #143854, /* Couleur de la première rayure */
+       #143854 10px, /* Largeur de la première rayure */
+       #F8F9F6 10px, /* Couleur de l'espace entre les rayures */
+       #F8F9F6 20px /* Largeur totale d'une répétition */
+   ); /* Répétition pour créer le motif */
+}
+
+.striped-section p {
+   visibility: hidden; /* Rendre le texte invisible */
+}
+
+/* Styles pour les éléments span "2024 Céline Hubert Conçu avec coeur" à l'intérieur de custom-footer-section */
+.footer-text {
+   font-family: 'Poppins', sans-serif; /* Change la police */
+   font-size: 10px; /* Change la taille de la police */
+   font-weight: 400; /* Change le poids de la police */
+   color: #F8F9F6; /* Change la couleur du texte */
+}
+
+
+/* Styles spécifiques pour l'espace entre les liens PIED DE PAGE */
+.pied-page-spacer {
+   margin-bottom: 40px; /* Ajoutez de l'espace entre les éléments */
+}
+
+/* Classe pour les horaires d'accueil */
+.pied-page-typo {
+   color: #F8F9F6; 
+   text-align: center; /* Pour garder le texte centré */
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+}
+
+/* Style pour les horaires d'accueil*/
+.liens-utiles-typo h5 {
+   margin-bottom: 25px; /* Augmente l'espace sous le titre */
+}
+
+.pied-page-typo h5 {
+   margin-bottom: 35px; /* Augmente l'espace sous le titre */
+}
+
+.pied-page-typo p {
+   margin-top: -10px; /* Réduit l'espace entre les paragraphes */
+}
+
+
+
+/* Classe pour les liens utiles */
+.liens-utiles-typo {
+   color: #F8F9F6; /* Par exemple, un bleu plus foncé */
+   text-align: center; /* Pour garder le texte centré */
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+}
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   .pied-page-typo,
+   .liens-utiles-typo  {
+      font-size: 12px;
+   }
+ }
+
+/* Alignement du SVG avec le texte des liens */
+.liens-utiles-typo a span {
+   vertical-align: middle; /* Aligne le SVG avec le texte */
+   margin-right: 5px; /* Espace entre le SVG et le texte */
+}
+
+
+/* Style des liens pied de page*/
+.liens-utiles-typo a {
+   color: #F8F9F6; /* Couleur personnalisée pour les liens */
+   text-decoration: none; /* Pas de soulignement */
+}
+
+.liens-utiles-typo a:hover {
+   color: #9786BD; /* Couleur pour l'effet hover */
+}
+
+
+.align-center {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+/* Style des icônes svg des liens pied de page*/
+.icone-liens {
+   max-height: 15px;
+   vertical-align: middle;
+   margin-right: 5px;
+}
+
+/* Style des icônes svg des liens pied de page*/
+.love-letter {
+   max-height: 25px;
+   vertical-align: middle;
+   margin-right: 5px;
+}
+
+
+
+
+ /* Styles pour le menu déroulant */
+
+  /* Styles pour le menu déroulant */
+ .custom-navbar {
+   background-color: #F8F9F6;
+   border-bottom: 5px solid transparent; /* Assurez-vous que la bordure inférieure est transparente */
+   border-image: url('images/navbar/bordure-main multicolor.svg') 30 repeat; /* Remplacez 'chemin/vers/votre/image.png' par le chemin de votre image */
+   transition: border-image 0.5s ease-in-out; /* Ajoute une transition pour l'effet tremblant */
+}
+
+.custom-navbar:hover {
+   border-image: url('images/navbar/bordure-main multicolor.svg') 30 repeat; /* Image tremblante */
+}
+
+ /* Styles pour la typo du menu déroulant */
+.poppins-regular-nav-link {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 12px; /* Taille de la police relative */
+   font-weight: bold; /* Épaisseur de la police */
+   color: #103754;
+ }
+
+/* Styles pour le logo chez celine du menu déroulant */
+ .navbar-logo {
+   width: 150px; /* Ajustez la largeur de votre logo selon vos besoins */
+   height: auto;
+   margin-right: 0px; /* Ajoutez un espacement entre le logo et le texte */
+}
+ 
+
+
+/* Style de l'icône de flèche vers le haut */
+.scroll-to-top {
+   position: fixed;
+   bottom: 20px; /* Ajustez la position verticale selon vos besoins */
+   right: 20px; /* Ajustez la position horizontale selon vos besoins */
+   font-size: 24px; /* Taille de l'icône */
+   background-color: #F79927; /* Couleur de fond */
+   color: #fff; /* Couleur de l'icône (blanc) */
+   width: 50px; /* Largeur du cercle */
+   height: 50px; /* Hauteur du cercle */
+   border-radius: 50%; /* Forme arrondie */
+   transition: background-color 0.3s, transform 0.3s; /* Effets de transition */
+   z-index: 999; /* Assurez-vous que l'icône est au-dessus du contenu */
+   text-align: center; /* Centre le texte horizontalement */
+   line-height: 50px; /* Centre l'icône verticalement */
+
+}
+
+/* Au survol, changez la couleur de la flèche (blanche) */
+.scroll-to-top:hover {
+   background-color: #9786BD; /* Couleur de fond au survol */
+  
+}
+
+.rocket-icon {
+   width: 54px; /* Taille de l'icône */
+   height: 54px; /* Taille de l'icône */
+}
+
+
+/* Style responsive */
+@media (max-width: 480px) {
+   .scroll-to-top {
+       font-size: 20px; /* Réduisez la taille de l'icône pour les écrans plus petits */
+       width: 40px; /* Réduisez la largeur du cercle pour les écrans plus petits */
+       height: 40px; /* Réduisez la hauteur du cercle pour les écrans plus petits */
+       line-height: 40px; /* Centre l'icône verticalement pour les écrans plus petits */
+   }
+
+   .rocket-icon {
+      width: 44px; /* Taille de l'icône */
+      height: 44px; /* Taille de l'icône */
+   }
+}
+
+
+
+
+
+/* Page contact.html */
+
+
+/* Style pour la page contact.html */
+#contact {
+   background-color: #96D2CA;
+ 
+
+}
+
+
+.header-main-contact {
+   background-color: #96D2CA;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
+   text-align: center;
+}
+
+.heading-main-contact {
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
+   color: #96D2CA;
+   margin: 0; /* Supprimez les marges verticales */
+   
+}
+
+
+
+
+
+.heading-contact {
+   font-size: 1px; /* Ajoutez cette règle pour rétrécir la taille de la police */
+   color: #96D2CA;
+   margin: 0; /* Ajoutez cette règle pour supprimer les marges par défaut */
+}
+
+/* Style pour la section de contact pour éviter les espaces indésirables */
+.contact-section {
+   margin: 0; /* Pas de marge */
+   padding: 0; /* Pas de padding */
+}
+
+
+.container-fluid-contact {
+   padding: 0; /* Aucun remplissage */
+   margin: 0; /* Aucune marge */
+}
+
+.row-contact {
+   margin: 0; /* Aucune marge */
+   padding: 0; /* Aucun remplissage */
+}
+
+.col-md-12-contact {
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+}
+
+
+/* Style de la carte */
+#map {
+   filter: 
+     hue-rotate(25deg)  /* Change la teinte */
+}
+
+   #map {
+      width: 100%; 
+      height: 400px;
+      margin: 0; /* Pas de marge */
+      padding: 0; /* Pas de padding */
+    
+   }
+
+
+/* Media query pour écrans plus petits */
+@media (max-width: 768px) {
+   #map {
+     height: 300px; /* Réduit la hauteur de la carte */
+   }
+ }
+ 
+ /* Media query pour écrans encore plus petits */
+ @media (max-width: 576px) {
+   #map {
+     height: 200px; /* Réduit davantage la hauteur de la carte */
+   }
+ }
+
+
+
+/* Positionnement de l'image SVG en haut du contact-label */
+.contact-curvy {
+   display: block; /* Pour s'assurer qu'elle occupe une ligne entière */
+   margin: 0 auto; /* Centrer horizontalement si nécessaire */
+   padding: 0; /* Pas de padding */
+   width: 100%; /* La rendre responsive en remplissant toute la largeur */
+}
+
+.leaflet-container {
+   position: relative; /* Assurez-vous que le conteneur parent a une position relative */
+}
+
+.map-top-curvy {
+   width: 100%; /* Prendre toute la largeur */
+   height: auto; /* Assurer que le SVG garde ses proportions */
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+}
+
+
+.map-curvy {
+   position: absolute; /* Positionnement absolu par rapport au conteneur parent */
+   bottom: 0; /* Positionner le SVG en bas du conteneur */
+   left: 0; /* Alignement à gauche */
+   width: 100%; /* Pour qu'il prenne toute la largeur */
+   height: auto; /* Assurez-vous qu'il garde ses proportions */
+   z-index: 1; /* Pour s'assurer que le SVG est devant les autres éléments */
+   margin: 0; /* Pas de marge supplémentaire */
+   padding: 0; /* Pas de remplissage supplémentaire */
+}
+
+
+.contact-form {
+   background-color: #F8F9F6;
+   border: none; /* Supprimez la bordure par défaut de l'iframe */
+}
+
+.label-form {
+   padding: 20px;
+   text-align: left; /* Alignement à gauche */
+ 
+   
+}
+
+
+/* Conteneur du champ de formulaire avec position relative pour les labels flottants */
+.form-group {
+   position: relative; /* Nécessaire pour positionner le label flottant */
+   margin-bottom: 20px; /* Espace entre les champs */
+}
+
+
+/* Style du label flottant */
+.floating-label {
+   position: absolute; /* Nécessaire pour flottement */
+   top: 10px; /* Position initiale du label */
+   left: 0; /* Alignement à gauche */
+   font-size: 16px; /* Taille du texte du label */
+   color: #103653; /* Couleur du label */
+   transition: all 0.2s ease; /* Transition pour déplacer le label */
+   pointer-events: none; /* Empêche l'interaction directe avec le label */
+}
+
+/* Styles de base pour les champs de formulaire */
+.form-control {
+   width: 100%; /* Remplit le conteneur */
+   border: none;
+   border-bottom: 2px solid #103653; /* Couleur par défaut */
+   border-radius: 0; /* Pas de coins arrondis */
+   outline: none; /* Pas de bordure au focus */
+   padding: 10px 0; /* Espace intérieur du champ */
+   font-family: "Poppins", sans-serif;
+   background-color: #F8F9F6;
+   color: #103653; /* Couleur du texte */
+   transition: all 0.2s ease; /* Pour une transition fluide */
+}
+
+/* Quand le champ est en focus ou non vide, déplace le label vers le haut */
+.form-control:focus + .floating-label,
+.form-control:not(:placeholder-shown) + .floating-label {
+   top: -20px; /* Position du label lorsqu'il flotte */
+   font-size: 12px; /* Taille du texte réduite */
+   color: #103653; /* Couleur du label */
+}
+
+
+
+/* Style pour le champ de saisie lorsqu'il est en focus */
+.form-control:focus {
+   border-bottom-color: #103653; /* Enlève la couleur de la ligne en focus */
+   outline: none; /* Enlève également l'encadrement bleu du focus */
+   box-shadow: none; /* Enlève également toute ombre portée (shadow) */
+}
+
+/* Effet pour le texte lorsqu'il y a du contenu (non vide) */
+.form-control:not(:placeholder-shown) {
+   color: #103653; /* Couleur du texte quand du contenu est saisi */
+ }
+
+
+/* Masquer le placeholder avec la même couleur que le fond */
+.form-control::placeholder {
+   color: #F8F9F6; /* Couleur du placeholder ton sur ton avec le fond */
+}
+
+
+      #prenom,
+      #email, 
+      #message {
+         font-family: "Poppins", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+         background-color: #F8F9F6;
+        
+      }
+      
+
+/* Animation de fondu pour le texte dynamique du formulaire */
+@keyframes fadeInOutContact {
+   0%, 100% {
+     opacity: 0; /* Début et fin à opacité 0 */
+   }
+   25%, 75% {
+     opacity: 1; /* Apparition à opacité 1 */
+   }
+ }
+ 
+ /* Appliquer l'animation de fondu à l'élément avec répétition infinie */
+ .fade-in-out-contact {
+   animation: fadeInOutContact 8s infinite; /* Durée de l'animation et répétition */
+   color: #F79927; /* Couleur du texte */
+   font-family: "Finger Paint", sans-serif; /* Police personnalisée */
+   font-weight: 400; /* Poids de la police */
+   font-size: 1em; /* Taille du texte */
+   text-align: left; /* Alignement du texte à gauche */
+ }
+
+
+
+/* Styles spécifiques pour l'espace entre les titres "ME CONTACTER" et le texte "'c'est avec plaisir que j'échangerai avec vous." */
+.contact-spacer {
+   margin-bottom: 40px; /* Ajoutez de l'espace entre les éléments */
+}
+
+
+  /* Styles personnalisés pour le texte "ME CONTACTER:" */
+  .contact-label {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   text-align: left; /* Alignement du texte à gauche */
+   font-size: 1.2em; /* Taille de la police */
+   font-weight: bold; /* Épaisseur de la police */
+   color: #103754; /* Couleur du texte */
+   margin-right: 10px; /* Espace entre le texte fixe et le texte animé */
+   margin: 0; /* Supprimez l'espace vertical entre les éléments */
+   padding: 0; /* Supprimez le padding */
+  
+}
+
+
+
+/* Ajustez la taille de l'icône de voiture SVG */
+.btn-custom svg {
+   width: 50px; /* Ajustez la largeur de l'icône selon vos besoins */
+   height: auto; /* Maintient le rapport hauteur-largeur */
+   margin-right: 10px; /* Espace entre l'icône et le texte */
+   margin-bottom: -20px; /* Espace entre l'icône et le texte */
+}
+
+/* Centrer l'icône SVG */
+.car-send {
+   width: 120px; /* Ajustez la largeur de l'icône selon vos besoins */
+   height: 120px; /* Maintient le rapport hauteur-largeur */
+   transition: all 0.3s ease; /* Transition pour le changement de couleur */
+}
+.car-send:hover {
+   filter: hue-rotate(140deg); /* Change la teinte au survol */
+ }
+
+@media screen and (max-width: 768px) {
+   .car-send {
+   width: 100px; /* Ajustez la largeur de l'icône selon vos besoins */
+   height: 100px; /* Maintient le rapport hauteur-largeur */
+   }
+ }
+
+
+
+
+/* Page presentation.html */
+
+/* Style pour la section "portrait" */
+#portrait {
+   
+   background-color: #F8F9F6;
+   position: relative;
+   padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
+   overflow: hidden; /* Cachez le débordement de l'image SVG */
+   padding-bottom: 80px; /* Hauteur de la bande de couleur */
+}
+
+/* Définition du style pour la bande de couleur en bas de la section */
+#portrait::after {
+   content: ''; /* Ajout de contenu avec la pseudo-classe ::after */
+   position: absolute; /* Position absolue */
+   bottom: 0; /* Alignement en bas */
+   left: 0; /* Alignement à gauche */
+   width: 100%; /* Largeur maximale */
+   height: 80px; /* Hauteur de la bande de couleur */
+   background-color: #98D1CA; /* Couleur de la bande de couleur */
+ 
+}
+
+
+#portrait .col-md-12 img.fond-curvy {
+   position: absolute;
+   width: 100%;
+   top: 100px;
+   left: 0;
+   right: 0;
+   margin: 0;
+   z-index: 0;
+}
+
+
+#portrait .fond-curvy {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
+}
+
+
+#portrait {
+   background-color: #F8F9F6;
+   position: relative;
+   padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
+   overflow: hidden; /* Cachez le débordement de l'image SVG */
+   padding-bottom: 80px; /* Hauteur de la bande de couleur */
+}
+
+
+.header-main {
+   background-color: #F8F9F6;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
+   text-align: center;
+}
+
+.heading-main {
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
+   color: #F8F9F6;
+   margin: 0; /* Supprimez les marges verticales */
+   
+}
+
+
+
+.heading-portrait {
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
+
+
+.heading-presentation {
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
+
+
+
+.fond-uni {
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 95%; /* Ajustez la largeur maximale pour éviter le débordement */
+   height: 100%; /* Ajustez la hauteur maximale pour éviter le débordement */
+   background-color: #98D1CA; /* Couleur de fond pour le fond uni */
+   border-radius: 50%; /* Pour garder la forme ronde */
+   z-index: -1; /* Assurez-vous que le fond uni est au-dessus de l'image SVG */
+}
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+@media (max-width: 768px) {
+   .fond-uni {
+   top: 65%;
+   left: 50%;
+   width: 95%; /* Ajustez la largeur maximale pour éviter le débordement */
+   height: 105%; /* Ajustez la hauteur maximale pour éviter le débordement */
+    }
+
+}
+
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+.bordered-content-presentation-image .presentation-image img {
+   max-width: 300px; /* Définissez la largeur maximale souhaitée */
+   max-height: 300px; /* Définissez la hauteur maximale souhaitée */
+   border-radius: 50%; /* Pour garder la forme ronde */
+   margin-top: 20px; /* Espace sur l'image */
+   margin-bottom: -50px; /* Espace sous l'image */
+   border: 1em solid #F8F9F6; /* Ajoute une bordure autour photos animation projet-accueil */
+   
+ }
+
+
+/* Styles pour positionner l'icône de position sur la photo animée */
+.presentation-image {
+   position: relative;
+   display: inline-block; /* Pour empêcher le débordement de l'icône position */
+   z-index: 1;
+}
+
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+@media (max-width: 768px) {
+   .bordered-content-presentation-image .presentation-image img {
+      max-width: 200px; /* Définissez la largeur maximale souhaitée */
+      max-height: 200px; /* Définissez la hauteur maximale souhaitée */
+      border-radius: 50%; /* Pour garder la forme ronde */
+      margin-top: 20px; /* Espace sur l'image */
+      margin-bottom: 0px; /* Espace sous l'image */
+      border: 0.7em solid #F9FAF7; /* Ajoute une bordure autour photos animation projet-accueil */
+      
+    }
+
+}
+
+
+
+
+/* Style de l'icône de bulle */
+.bubble-icon {
+   position: absolute;
+   top: 25%; /* Position verticale centrée */
+   left: 85%; /* Position horizontale centrée */
+   transform: translate(-50%, -50%);
+   font-size: 2rem; /* Réglez la taille de l'icône en fonction de vos préférences */
+   color: #F17961; /* Couleur de l'icône par défaut */
+   z-index: 2; /* Pour que l'icône soit au-dessus de la photo de profil */
+   transition: color 0.3s; /* Ajoutez une transition de couleur */
+}
+
+/* Au survol, changez la couleur de l'icône (à #685153) */
+.bubble-icon:hover {
+   color: #FECE8C; /* Couleur de l'icône au survol */
+}
+
+
+/* Styles pour rendre l'icône responsive */
+@media (max-width: 480px) {
+   .bubble-icon {
+       font-size: 1.5rem; /* Réduisez la taille de l'icône pour les écrans plus petits */
+   }
+}
+
+@media (max-width: 768px) {
+
+   .bubble-icon {
+      font-size: 1.5rem; /* Réduisez la taille de l'icône pour les écrans plus petits */
+  }
+
+   /* Réduisez la taille de la photo de profil */
+   .profile-image img {
+      max-width: 200px; /* Définissez la largeur maximale souhaitée */
+      max-height: 200px; /* Définissez la hauteur maximale souhaitée */
+      border-radius: 50%; /* Pour garder la forme ronde */
+    
+   }
+   
+   .bordered-content-profil-image .profile-image img {
+      max-width: 100%;
+      height: auto; /* Pour conserver les proportions */
+      border-radius: 50%; /* Pour garder la forme ronde */
+      border: 0.8em solid #F8F9F6; /* Ajoute une bordure autour photo de profil */
+   }
+}
+
+
+
+/* CSS de base pour une animation de fade-in/fade-out de Céline assistante maternelle */
+@keyframes fadeOutDown {
+   0% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+   100% {
+       opacity: 0;
+       transform: translateY(20px); /* Vers le bas */
+   }
+}
+
+@keyframes fadeInDown {
+   0% {
+       opacity: 0;
+       transform: translateY(-20px); /* Depuis le haut */
+   }
+   100% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Classe pour animer "Céline" avec effet fade-out */
+.celine {
+   opacity: 1; /* Définition de l'opacité initiale */
+}
+
+.celine.fade-out {
+   animation: fadeOutDown 2s forwards; /* Animation vers le bas */
+}
+
+/* Classe pour animer "Assistante" avec effet fade-in */
+.assistante {
+   opacity: 0; /* Définition de l'opacité initiale */
+}
+
+.assistante.fade-in {
+   animation: fadeInDown 2s forwards; /* Animation descendant du haut */
+}
+
+
+
+
+
+/* Pour un meilleur espacement entre le texte */
+.lead {
+   
+   white-space: normal;
+   font-size: 1.2vw;
+   letter-spacing: 8px;
+   color: #241F23;
+   font-weight: bold; 
+}
+
+/* Styles pour rendre l'icône responsive */
+@media (max-width: 768px) {
+   .lead {
+       font-size: 1.2em;
+   }
+   .presentation {
+       font-size: 0.8em;
+   }
+}
+
+
+
+/* Style titre Céline */
+.finger-paint-regular-c {
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 4em; /* Taille de la police relative */
+   color: #103754;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .finger-paint-regular-c {
+     font-size: 2.5em; /* Taille de la police pour les écrans plus petits */
+   }
+ }
+
+ /* Style titre assistante maternelle agréée */
+ .finger-paint-regular-2 {
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2.7em; /* Taille de la police relative */
+   color: #103754;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .finger-paint-regular-2 {
+     font-size: 1.5em; /* Taille de la police pour les écrans plus petits */
+   }
+ }
+
+/* Style titre un accueil personnalisée */
+ .finger-paint-regular-3 {
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2em; /* Taille de la police relative */
+   color: #103754;
+ }
+
+ @media screen and (max-width: 768px) {
+   .finger-paint-regular-3 {
+     font-size: 1.3em; /* Taille de la police pour les écrans plus petits */
+   }
+ }
+
+
+/* Page presentation-text.html */
+
+
+
+#presentation-text {
+   background: linear-gradient(to bottom, #98D1CA 5%, #F8F9F6 95%); /* Création du dégradé avec bande réglable */
+   margin-bottom: 0; /* Corrige le margin-bottom négatif */
+  
+}
+
+
+#presentation-text .profile-text {
+   margin-top: -60px; /* Valeur par défaut pour les écrans de taille moyenne et plus grande */
+  
+}
+
+@media (max-width: 767px) { 
+   #presentation-text .profile-text {
+      margin-top: -120px; /* Réduction de la marge sur les écrans plus petits */
+ 
+   }
+}
+
+
+#presentation .col-md-12 img.fond-curvy {
+   position: absolute;
+   width: 100%;
+   top: 100px;
+   left: 0;
+   right: 0;
+   margin: 0;
+   z-index: 0;
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 768px) {
+   #presentation .col-md-12 img.fond-curvy {
+      top: 125px; /* Ajustez l'espacement entre l'image SVG et la prochaine section */
+    
+   }
+ }
+
+
+
+/* Styles pour rendre l'icône responsive uniquement pour le paysage et max-width: 768px */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+   #presentation .col-md-12 img.fond-curvy {
+       content: url('nuages-bleus-dessins-test-cleanbis-media.svg');
+       position: absolute;
+       width: 100%;
+       top: 0px;
+       left: 0;
+      
+       right: 0;
+       margin: 0;
+   }
+}
+
+
+.heading-presentation-text {
+   color: #97D0C9; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+  
+}
+
+.poppins-regular {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+ }
+
+
+.checked {
+   display: inline-block; /* Maintenir le SVG sur la même ligne */
+   width: 3rem; /* Ajustez la taille du SVG */
+   height: auto; /* Conserver les proportions */
+   margin-right: 10px; /* Espace entre le SVG et le texte */
+ }
+ 
+ .poppins-regular-checked {
+   display: inline; /* Pour aligner le texte sur la même ligne que le SVG */
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   font-style: normal;
+   color: #103754;
+ }
+ 
+
+ .container {
+   position: relative;
+ }
+ 
+ .poppins-regular-rdv {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+   display: inline-flex; /* Garde les éléments en ligne */
+   align-items: center; /* Aligne verticalement le texte et le SVG */
+ }
+ 
+ .checked-localisation {
+   margin-left: 10px; /* Ajoute de l'espace entre le texte et le SVG */
+   width: 4.5rem; /* Ajustez la taille du SVG */
+ }
+ 
+
+
+
+
+/* Style pour la page projet-accueil.html */
+
+
+/* Style pour la section "chezceline" */
+#chezceline {
+   
+   background: #F8F9F6; /* Création du dégradé avec bande réglable */
+   position: relative; /* Nécessaire pour l'alignement des pseudo-éléments */
+   padding-top: 300px; /* Ajustez l'espacement en haut de la section pour accueillir l'image SVG */
+   overflow: hidden; /* Cachez le débordement de l'image SVG */
+   padding-bottom: 80px; /* Hauteur de la bande de couleur */
+
+}
+
+/* Définition du style pour la bande de couleur en bas de la section */
+#chezceline::after {
+   content: ''; /* Ajout de contenu avec la pseudo-classe ::after */
+   position: absolute; /* Position absolue */
+   bottom: 0; /* Alignement en bas */
+   left: 0; /* Alignement à gauche */
+   width: 100%; /* Largeur maximale */
+   height: 80px; /* Hauteur de la bande de couleur */
+   background-color: #98D1CA; /* Couleur de la bande de couleur */
+ 
+}
+
+.heading-chezceline {
+   color: #F8F9F6; /* Changez la couleur selon votre préférence */
+   font-size: 1px;
+}
+
+
+#chezceline .col-md-12 img.fond-curvy {
+   position: absolute;
+   width: 100%;
+   top: 100px;
+   left: 0;
+   right: 0;
+   margin: 0;
+   z-index: 1;
+}
+
+
+#chezceline .fond-curvy {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -1; /* Assurez-vous que l'image SVG est derrière le contenu */
+}
+
+
+
+/* Dans votre fichier CSS */
+.heading-chezceline {
+   color: #F9FAF7; /* Changez la couleur selon votre préférence */
+}
+
+/* Ajoutez une marge intérieure à la sections de la page projet-accueil.html */
+.valeur-section,
+.team-section,
+.planning-section,
+.securite-section,
+.role-section {
+   padding-left: 20px; /* Ajoutez une marge de 20px à gauche */
+   padding-right: 20px; /* Ajoutez une marge de 20px à droite */
+   padding-bottom: 40px; /* Ajoutez une marge de 20px en bas */
+   
+}
+
+/* Style de l'icône position */
+.position-icon {
+   position: absolute;
+   top: 32%; /* Position verticale centrée */
+   left: 67%; /* Position horizontale centrée */
+   transform: translate(-50%, -50%);
+   z-index: 2; /* Pour que l'icône soit au-dessus de la photo de profil */
+}
+
+/* Styles pour rendre l'icône responsive */
+@media (max-width: 768px) {
+   .position-icon svg {
+       width: 2.5em; /* Réduisez la taille de l'icône pour les écrans plus petits */
+       height: 2.5em;
+   }
+}
+
+/* Pour que l'animation fonctionne */
+.hidden {
+   display: none;
+}
+
+/* Appliquez la largeur et la hauteur aux images dans un <picture> */
+picture img {
+   width: 100%;
+   height: auto;
+}
+
+/* Classe spécifique pour des règles particulières */
+.animation-frame {
+   width: 100%;
+   height: auto;
+}
+
+
+
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+.bordered-content-lieu-accueil-image .lieu-accueil-image img {
+   max-width: 600px; /* Définissez la largeur maximale souhaitée */
+   max-height: 600px; /* Définissez la hauteur maximale souhaitée */
+   border-radius: 50%; /* Pour garder la forme ronde */
+   margin-top: 20px; /* Espace sur l'image */
+   margin-bottom: -50px; /* Espace sous l'image */
+   border: 1em solid #96D2CA; /* Ajoute une bordure autour photos animation projet-accueil */
+   
+ }
+
+
+/* Styles pour positionner l'icône de position sur la photo animée */
+.lieu-accueil-image {
+   position: relative;
+   display: inline-block; /* Pour empêcher le débordement de l'icône position */
+   z-index: 1;
+}
+
+
+/* Style de la photo animée et le style de la bordure autour photos animation projet-accueil */
+@media (max-width: 768px) {
+   .bordered-content-lieu-accueil-image .lieu-accueil-image img {
+      max-width: 250px; /* Définissez la largeur maximale souhaitée */
+      max-height: 250px; /* Définissez la hauteur maximale souhaitée */
+      border-radius: 50%; /* Pour garder la forme ronde */
+      margin-top: 20px; /* Espace sur l'image */
+      margin-bottom: -50px; /* Espace sous l'image */
+      border: 0.7em solid #96D2CA; /* Ajoute une bordure autour photos animation projet-accueil */
+      
+    }
+
+}
+
+
+/* Styles pour la section role */
+
+#role {
+   background-color: #98D1CA;
+
+}
+
+.role-assmat img {
+   display: block; /* Pour éviter l'espace réservé au texte sous l'image */
+   width: 100%; /* Pour que l'image occupe toute la largeur de son conteneur */
+ }
+
+
+/* Styles spécifiques le titre "BIENVENUE" */
+.poppins-bold-role-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103653;
+   font-size: 1.5em; /* Taille de la police relative */
+   margin-bottom: 10px; /* Marge en bas du titre */
+
+}
+
+
+
+/* Styles spécifiques le titre "BIENVENUE chez Céline" */
+.title-container {
+   display: flex;
+   align-items: baseline; /* Aligner sur la ligne de base */
+   margin-bottom: 50px;
+}
+
+
+ /* Animation de fondu pour "chez Céline" */
+ @keyframes fadeInOutrole {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation "chez Céline" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-role {
+   animation: fadeInOuteducative 8s infinite;
+   color: #F8F9F6; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+
+
+
+
+.role-item {
+   
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   text-align: left;
+   padding: 0; /* Supprimer tout rembourrage */
+   margin-bottom: 0px; /* Espacement entre les éléments */
+   
+}
+
+
+.role-sous-titre {
+   margin-top: 10px;
+   margin-left: 2vw;
+   margin-right: 2vw;
+   white-space: normal;
+   font-size: 1.2vw;
+   min-width: 160px;
+   letter-spacing: 8px;
+   color: #000;
+   font-weight: bold; 
+}
+
+
+@media screen and (max-width: 768px) {
+   
+   .role-sous-titre {
+      font-size: 4vw;
+   }
+
+}
+
+
+
+/* Styles pour la section securite */
+
+#securite {
+   background-color: #F8F9F6;
+   
+}
+
+
+/* Styles spécifiques le titre "LA SECURITE" */
+.poppins-bold-securite-title {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #103653;
+font-size: 1.5em; /* Taille de la police relative */
+margin-bottom: 10px; /* Marge en bas du titre */
+
+}
+
+
+
+
+/* Styles spécifiques le titre "LA SECURITE en priorité" */
+.title-container {
+display: flex;
+align-items: baseline; /* Aligner sur la ligne de base */
+margin-bottom: 50px;
+}
+
+
+/* Animation de fondu pour "en priorité" */
+@keyframes fadeInOutsecurite {
+0%, 100% {
+    opacity: 0;
+}
+25%, 75% {
+    opacity: 1;
+}
+}
+
+/* Appliquer l'animation "éducatives" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-securite {
+animation: fadeInOutsecurite 8s infinite;
+color: #96D2CA; /* Couleur du texte souhaitée */
+display: inline-block; /* Maintient sur la même ligne */
+font-family: "Finger Paint", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1em;
+position: relative; /* Ajout de position relative */
+}
+
+
+
+/* Styles spécifiques pour l'espace entre les titres "Routine" et "Dejeuner" et le texte */
+.canaille-spacer {
+margin-bottom: 40px; /* Ajoutez de l'espace entre les éléments */
+}
+
+/* Styles spécifiques pour l'espace entre les titres "Routine" et "Dejeuner" et le texte */
+.canaille-title-spacer {
+margin-bottom: 20px; /* Ajoutez de l'espace entre les éléments */
+}
+
+.flex-container {
+display: flex;
+justify-content: center; /* Centrer horizontalement */
+align-items: center; /* Centrer verticalement */
+
+}
+
+
+/* Styles spécifiques le titre "BIENVENUE chez Céline" */
+.title-cat-container {
+display: flex;
+align-items: baseline; /* Aligner sur la ligne de base */
+margin-bottom: 50px;
+margin-top: 50px;
+justify-content: center; /* Centrer horizontalement */
+}
+
+
+
+
+@keyframes fadeInOutcanaille {
+0%, 100% {
+    opacity: 1; /* Complètement visible */
+}
+50% {
+    opacity: 0; /* Complètement transparent */
+}
+}
+
+.fade-in-out-canaille {
+animation: fadeInOutsecurite 8s infinite;
+color: #96D2CA; /* Couleur du texte souhaitée */
+display: inline-block; /* Maintient sur la même ligne */
+font-family: "Finger Paint", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1em;
+position: relative; /* Ajout de position relative */
+
+}
+
+.securite-item {
+   
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   text-align: left;
+   padding: 0; /* Supprimer tout rembourrage */
+   margin-bottom: 20px; /* Espacement entre les éléments */
+   
+}
+
+@media only screen and (max-width: 768px) {
+   
+   .securite-item{
+       margin-top: 60px; /* Ajoutez l'espace nécessaire entre les éléments lorsque la largeur de l'écran est inférieure à 768px */
+       margin-bottom: -40px;
+   }
+}
+
+
+ .securite-assmat img {
+   display: block; /* Pour éviter l'espace réservé au texte sous l'image */
+   width: 100%; /* Pour que l'image occupe toute la largeur de son conteneur */
+ }
+
+
+ .doudou {
+   z-index: 1;
+   width: 100%; 
+  
+}
+
+.celine-cat {
+   z-index: 1;
+   width: 70%; 
+}
+
+@media (max-width: 768px) {
+   
+   .celine-cat {
+      width: 100%; 
+   }
+}
+
+
+/* Ordre des images doudou et Canaille sur petits écrans" */
+@media (max-width: 768px) {
+   .order-md-1,
+   .order-md-2 {
+       order: 0;
+   }
+}
+
+
+
+/* Style image doudou marges */
+@media only screen and (max-width: 768px) {
+   
+   .valeur-item {
+       margin-top: 60px; /* Ajoutez l'espace nécessaire entre les éléments lorsque la largeur de l'écran est inférieure à 768px */
+       margin-bottom: 0px;
+   }
+}
+
+
+@media only screen and (max-width: 768px) {
+   .mb-4{
+       margin-top: -30px; /* Ajoutez l'espace nécessaire entre les éléments lorsque la largeur de l'écran est inférieure à 768px */
+     
+      }
+   }
+
+
+ 
+/* Styles pour la section valeur */
+
+/* Style pour la section */
+#valeur {
+   position: relative;
+   padding: 50px 0; /* Ajoute de l'espace autour du contenu */
+}
+
+/* Style pour l'image de fond */
+#valeur::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('images/projet-accueil/valeur/motricite-libre-nb.jpg'); /* Image de fond */
+   background-size: cover; /* Pour que l'image couvre toute la section */
+   background-position: center; /* Centre l'image */
+   z-index: -1; /* Placez-le en dessous du contenu */
+}
+
+/* Style pour le voile noir */
+#valeur::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(20, 56, 84, 0.8); /* Couleur de fond noir avec une opacité de 80% (143854 en décimal correspond à 20, 56, 84 en valeurs de rouge, vert et bleu respectivement) */
+   z-index: -1; /* Placez-le en dessous du contenu */
+}
+
+/* Style pour le cadre avec fond transparent */
+.valeur-item-4 {
+   background-color: transparent; /* Fond transparent */
+   border: 0.3em solid #CBD265; /* Bordure noire de 5 pixels autour du contenu */
+   border-radius: 10px; /* Coins arrondis */
+   padding: 20px; /* Ajoute de l'espace à l'intérieur du cadre */
+}
+
+
+
+/* Styles spécifiques le titre "VALEURS" */
+.poppins-bold-valeur-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #F8F9F6;
+   font-size: 1.5em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+
+}
+
+/* Styles spécifiques le titre "VALEURS éducatives" */
+.title-container {
+   display: flex;
+   align-items: baseline; /* Aligner sur la ligne de base */
+   margin-bottom: 50px;
+}
+
+
+ /* Animation de fondu pour "éducatives" */
+ @keyframes fadeInOuteducative {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation "éducatives" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-educative {
+   animation: fadeInOuteducative 8s infinite;
+   color: #98D1CA; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+/* Styles spécifiques le texte de la section valeur */
+.poppins-regular-valeur-texte {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: bold;
+   color: #F8F9F6;
+ }
+
+
+/* Styles pour la rubrique ACTIVITES */
+
+#activites {
+   background-color: #F9FAF7;
+ 
+}
+
+
+/* Styles spécifiques le titre "MA JOURNEE" */
+.poppins-bold-activites-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 1.5em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+
+}
+
+/* Styles spécifiques le titre "MA JOURNEE de ministre" */
+.title-container {
+   display: flex;
+   align-items: baseline; /* Aligner sur la ligne de base */
+   margin-bottom: 50px;
+}
+
+
+ /* Animation de fondu pour "de ministre" */
+ @keyframes fadeInOutplay {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation " de ministre" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-play {
+   animation: fadeInOutMinistre 8s infinite;
+   color: #96D2CA; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+
+
+.next-button-e,
+.next-button-d,
+.next-button-c,
+.next-button-b,
+.next-button-a,
+.uni-frame {
+
+   width: 100%;
+   
+}
+
+/* Styles pour le bouton */
+.next-button-e,
+.next-button-d,
+.next-button-c,
+.next-button-b,
+.next-button-a {
+   font-size: 5vw; /* Utilisation de vw pour une taille de police responsive */
+   cursor: pointer;
+   display: flex;
+   align-items: center; /* Centrer verticalement */
+   justify-content: center; /* Centrer horizontalement */
+   background-color: transparent;
+   border: none;
+   z-index: 1;
+
+}
+
+/* Media query pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+   .next-button-e,
+   .next-button-d,
+   .next-button-c,
+   .next-button-b,
+   .next-button-a {
+     font-size: 10vw; /* Taille de police plus grande pour les petits écrans */
+  }
+}
+
+.next-button {
+    position: absolute;
+    bottom: -2%; /* Ajustez la position verticale en pourcentage selon vos besoins */
+    left: 1%; /* Centrez horizontalement le bouton */
+    margin-bottom: 5px;/* Réduisez la marge en bas pour rapprocher les boutons des images */
+}
+
+
+
+/* Styles pour le conteneur du bouton et du fond oval */
+.button-container {
+   position: relative;
+   display: inline-block; /* Permet de contenir le bouton et le fond oval */
+}
+
+/* Styles pour le fond oval du bouton suivant */
+.oval {
+   position: absolute;
+   bottom: 42%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 90px; /* Largeur fixe */
+   height: 30px; /* Hauteur fixe */
+   border-radius: 20px; /* Pour créer une forme oval */
+   animation: changeColor 2s infinite alternate; /* Animation alternant entre deux couleurs */
+   z-index: -1; /* Mettre en arrière-plan par rapport au SVG */
+}
+
+/* Centrer l'icône SVG */
+.arrow {
+   display: block;
+   margin: auto; /* Centre horizontalement */
+   width: 50px; /* Ajustez la taille de l'icône SVG selon vos besoins */
+   height: auto;
+   position: relative; /* Ajout de cette ligne */
+   z-index: 1; /* Ajout de cette ligne */
+}
+
+
+/* Animation pour changer les couleurs du bouton oval suivant */
+@keyframes changeColor {
+   0% {
+       background-color: #F3992C; /* Couleur 1 */
+   }
+   100% {
+       background-color: #F9FAF7; /* Couleur 2 */
+   }
+}
+
+
+ /* Ajoutez ce CSS pour maintenir les images carrées */
+.activites-image {
+   padding: 10px;
+   text-align: center;
+}
+
+/* Supprimez la règle qui affecte toutes les images sous activites-image */
+.activites-image img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+.activites-image {
+   padding: 10px;
+   text-align: center;
+}
+
+
+.activites-item {
+   position: relative;
+   border-radius: 5px; /* Assure que les coins sont arrondis */
+   overflow: hidden; /* Assure que l'ombre ne dépasse pas le cadre */
+   filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4)); /* Ajoutez une ombre portée */
+   margin-bottom: 20px; /* Espacement entre les éléments */
+}
+
+
+
+/* Nouvelle classe pour les images animées avec une taille fixe */
+.fixed-size {
+   max-width: 100%;
+   height: auto;
+   width: 100%; /* Ajustez la largeur selon vos besoins */
+   height: auto; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* CSS pour ajuster la mise en page sur les écrans plus petits */
+@media (max-width: 767px) {
+    .activites-item {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/* Styles pour la section team */
+
+#team {
+   background-color: #98D1CA;
+  
+}
+
+
+/* Styles spécifiques le titre "COLLABORATEURS" */
+.poppins-bold-team-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 1.5em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+
+}
+
+
+
+/* Styles spécifiques le titre "COLLABORATEURS mes partenaires pour un accueil de qualité" */
+.title-container {
+   display: flex;
+   align-items: baseline; /* Aligner sur la ligne de base */
+   margin-bottom: 50px;
+}
+
+
+ /* Animation de fondu pour "mes partenaires pour un accueil de qualité" */
+ @keyframes fadeInOutteam {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation " de ministre" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-team {
+   animation: fadeInOutteam 8s infinite;
+   color: #F8F9F6; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+
+
+
+
+/* Styles spécifiques pour le texte descriptif collaborateurs */
+.poppins-team-text {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #103754;
+   font-size: 0.9em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+}
+
+@media screen and (max-width: 768px) {
+   
+   .poppins-bold-team-title {
+     
+      font-size: 0.8em; /* Taille de la police relative */
+      margin-bottom: 40px; /* Marge en bas du titre */
+   }
+
+   .poppins-team-text {
+     
+      font-size: 0.7em; /* Taille de la police relative */
+      
+   }
+   
+   
+}
+
+
+/* Styles spécifiques les sous titres des collaborateurs */
+.poppins-bold-team {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 1.2em; /* Taille de la police relative */
+ }
+ 
+ 
+/* Styles spécifiques aux bordures des collaborateurs */
+.team-item-4,
+.team-item-5,
+.team-item-6 {
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border: 0.3em solid #103754; /* Bordure noire de 5 pixels autour du contenu */
+   border-radius: 5px; /* Coins arrondis */
+   padding: 0; /* Supprimer tout rembourrage */
+   z-index: 2;
+   
+}
+
+/* Styles spécifiques bordures des collaborateurs de la même taille */
+.team-item-4,
+.team-item-5,
+.team-item-6 {
+   height: 100%;
+   
+}
+
+@media screen and (max-width: 768px) {
+   
+   .team-item-4 {
+      margin-bottom: 20px;
+      border: 0.2em solid #103754; /* Bordure noire de 5 pixels autour du contenu */
+   }
+   .team-item-5 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0.2em solid #103754; /* Bordure noire de 5 pixels autour du contenu */
+   }
+
+   .team-item-6 {
+      margin-bottom: 20px;
+      margin-top: 40px;
+      border: 0.2em solid #103754; /* Bordure noire de 5 pixels autour du contenu */
+   }
+
+}
+
+
+
+ .team-member img {
+   display: block; /* Pour éviter l'espace réservé au texte sous l'image */
+   width: 100%; /* Pour que l'image occupe toute la largeur de son conteneur */
+ }
+ 
+ .team-member h3,
+ .team-member p {
+   margin: 10px 0 0; /* Ajuster les marges autour du texte */
+   padding: 10px; /* Ajouter du rembourrage autour du texte */
+ }
+ 
+ .team-frame {
+   background-color: #241F23;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   text-align: center;
+  
+   font-family: 'VotrePolice', sans-serif;
+  
+   margin-bottom: 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   overflow: hidden;
+}
+
+.team-text {
+   margin-top: 10px;
+   margin-left: 2vw; /* Utilisation de vw pour une marge relative à la largeur de la vue */
+   margin-right: 2vw;
+   white-space: normal;
+   font-size: 1vw; /* Utilisation de vw pour la taille de la police relative à la largeur de la vue */
+   min-width: 140px; /* Taille minimale pour le texte en pixels */
+   color: #F9F4F0;
+}
+
+.team-item-1,
+.team-item-2,
+.team-image,
+.team-section {
+
+   height: 100%;
+   
+}
+
+@media only screen and (max-width: 768px) {
+   .team-item-1 {
+       margin-bottom: 20px; /* Ajoutez l'espace nécessaire entre les éléments lorsque la largeur de l'écran est inférieure à 768px */
+   }
+}
+
+ 
+@media only screen and (max-width: 768px) {
+   .team-item-2 {
+       margin-top: 20px; /* Ajoutez l'espace nécessaire entre les éléments lorsque la largeur de l'écran est inférieure à 768px */
+   }
+}
+
+
+
+
+/* Styles pour la section routine */
+ 
+#routine {
+   background-color: #97D3CB;
+}
+
+/* CSS */
+.timeline {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+
+/* Styles spécifiques de la ligne verticale en pointillé et de l'espacement du contenu */
+.routine-info {
+   flex: 1;
+   padding: 20px;
+   background-color: #97D3CB; /* Couleur de fond pour chaque élément de la frise */
+   border-left: 3px dotted #103754; /* Ligne verticale en pointillé */
+}
+
+
+/* Styles spécifiques le titre "MA JOURNEE" */
+.poppins-bold-routine-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 1.5em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+
+}
+
+/* Styles spécifiques le titre "MA JOURNEE de ministre" */
+.title-container {
+   display: flex;
+   align-items: baseline; /* Aligner sur la ligne de base */
+   margin-bottom: 50px;
+}
+
+
+ /* Animation de fondu pour "de ministre" */
+ @keyframes fadeInOutMinistre {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation " de ministre" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-ministre {
+   animation: fadeInOutMinistre 8s infinite;
+   color: #F8F9F6; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+
+
+
+/* Styles spécifiques les titres "Routine" et "Dejeuner" */
+.finger-paint-regular-routine-sous-title {
+   color: #103653;
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+   z-index: 1;
+}
+
+
+/* Styles spécifiques pour l'arrière plan oval des titres "Routine" et "Dejeuner" */
+.finger-paint-regular-routine-sous-title::after {
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%; /* Largeur de l'ovale horizontal */
+   height: 100%; /* Hauteur de l'ovale horizontal */
+   background-color: #F8F9F6;
+   border-radius: 90px / 30px; /* Border radius pour créer la forme d'un ovale */
+   z-index: -1;
+   overflow: hidden; /* Cacher le contenu qui dépasse de l'ovale */
+   
+}
+
+
+/* Styles spécifiques pour l'espace entre les titres "Routine" et "Dejeuner" et le texte */
+.routine-spacer {
+   margin-bottom: 30px; /* Ajoutez de l'espace entre les éléments */
+}
+
+/* Styles spécifiques pour les Icônes svg des titres "Routine" et "Dejeuner" */
+.day {
+   
+   width:2.5em; 
+   height:2.5em;
+}
+
+/* Styles spécifiques pour les Icônes svg des titres "Routine" et "Dejeuner" */
+.day-eat {
+   
+   width:2.2em; 
+   height:2.2em;
+}
+
+ 
+ /* Styles spécifiques pour les sous titres "Modalité" et "Pictogrammes" */
+ .routine {
+   display: flex;
+}
+
+
+ 
+/* Frise chronologique taille icônes svg et titres */ 
+ .routine-title { 
+
+   font-size: 18px;
+  
+ }
+
+
+/* Styles spécifiques pour "Modalité" et "Pictogrammes" */
+.poppins-bold-routine {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 14px;
+ }
+
+/* Styles spécifiques pour le texte de la frise */
+.poppins-regular-routine {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+ }
+
+ /* Styles spécifiques pour le texte en gras de la frise caché */
+ .poppins-bold-routine-hidden {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #40413E;
+   font-size: 14px;
+ }
+
+
+/* Styles spécifiques pour le texte de la frise caché */
+ .poppins-regular-routine-hidden {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #40413E;
+ }
+
+ 
+ 
+ 
+/* Styles pour aligner horizontalement sur les écrans de bureau */
+.routine-keywords {
+   display: flex;
+   flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+   justify-content: flex-start; /* Pour aligner les éléments à gauche */
+   
+}
+
+/* Styles pour les titres des pictogrammes */
+.routine-keyword {
+   margin-bottom: 5px; /* Espacement entre le texte et l'icône */
+   background-color: transparent;
+   color: #103754;
+   padding: 5px;
+   font-size: 10px;
+   cursor: pointer;
+}
+
+
+/* Styles pour les pictogrammes */
+.routine-keyword-container {
+   display: flex;
+   flex-direction: column; /* Arrange le texte au-dessus de l'icône */
+   align-items: center;
+   margin-right: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   width: 120px; /* Largeur fixe pour maintenir la forme carrée */
+   height: 120px; /* Hauteur fixe pour maintenir la forme carrée */
+   border: 3px solid #103754; /* Bordure autour du conteneur */
+   background-color: #F8F9F6; /* Fond blanc */
+   border-radius: 5px; /* Coins arrondis */
+}
+
+/* Styles pour centrer les icônes dans les pictogrammes */
+.routine-keyword-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+   flex: 1; /* Pour que le texte soit centré verticalement */
+}
+
+
+
+/* Ajoutez des styles spécifiques pour les écrans plus petits (par exemple, largeur inférieure à 768px) */
+@media (max-width: 768px) {
+   .routine-keyword {
+      font-size: 8px;
+   }
+
+   .routine-keywords {
+      flex-direction: column; /* Pour placer les routine-keyword les uns sous les autres */
+      align-items: flex-start; /* Pour centrer les routine-keyword horizontalement */
+  }
+}
+
+/* Styles pour la taille les icônes dans les pictogrammes */
+.icon-container img {
+   width: 50px; /* Largeur de l'icône */
+   height: 50px; /* Hauteur de l'icône */
+}
+
+
+/* Styles pour le positionnement des icônes svg et les titres "Routine" et "Dejeuner" sur la frise verticale */
+ .routine-icon-3,
+ .routine-icon-2,
+ .routine-icon-1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px; /* Ajustez la position de l'icône par rapport à la ligne verticale */
+ }
+
+ .routine-icon-3 i,
+ .routine-icon-2 i,
+ .routine-icon-1 i {
+   font-size: 20px; /* Ajustez la taille de l'icône */
+}
+ 
+
+/* Styles pour le fond du texte caché */
+ .routine-description {
+   background-color: rgba(255, 255, 255, 0.3); /* Fond blanc transparent */
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Gardez la description cachée au chargement de la page */
+ }
+ 
+ 
+  
+/* Cachez initialement la description texte caché */
+.routine-description {
+   display: none;
+}
+
+
+
+/* Styles pour les boutons "Modalité" + et - */
+.routine-btn-toggle {
+   background-color: #97D3CB;
+   color: #103754;
+   border: none;
+   cursor: pointer;
+}
+
+/* Styles pour les boutons "pictogrammes" + et - */
+.routine-picto-btn-toggle {
+   background-color: #97D3CB;
+   color: #103754;
+   border: none;
+   cursor: pointer;
+}
+
+
+  
+/* Styles pour la section agrement */
+ 
+#agrement {
+   background-color: #F8F9F6;
+}
+
+/* CSS */
+.timeline {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* Styles spécifiques de la ligne verticale en pointillé et de l'espacement du contenu */
+.agrement-info {
+   flex: 1;
+   padding: 20px;
+   background-color: #F8F9F6; /* Couleur de fond pour chaque élément de la frise */
+   border-left: 3px dotted #103754; /* Ligne verticale en pointillé */
+}
+
+
+/* Styles spécifiques le titre "MON AGREMENT" */
+.poppins-bold-agrement-title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 1.5em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+
+}
+
+/* Styles spécifiques le titre "MON AGREMENT un accueil personnalisé" */
+.title-container {
+   display: flex;
+   align-items: baseline; /* Aligner sur la ligne de base */
+   margin-bottom: 50px;
+}
+
+
+ /* Animation de fondu pour "un accueil personnalisé" */
+ @keyframes fadeInOutpersonnel {
+   0%, 100% {
+       opacity: 0;
+   }
+   25%, 75% {
+       opacity: 1;
+   }
+}
+
+/* Appliquer l'animation "un accueil personnalisé" avec une durée de 3 secondes, répétition infinie */
+.fade-in-out-personnel {
+   animation: fadeInOutpersonnel 8s infinite;
+   color: #97D3CB; /* Couleur du texte souhaitée */
+   display: inline-block; /* Maintient sur la même ligne */
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+}
+
+
+
+
+/* Styles spécifiques les titres de l'agrément */
+.finger-paint-regular-agrement-sous-title {
+   color: #103653;
+   font-family: "Finger Paint", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1em;
+   position: relative; /* Ajout de position relative */
+   z-index: 1;
+}
+
+
+/* Styles spécifiques pour l'arrière plan oval des titres de l'agrément */
+.finger-paint-regular-agrement-sous-title::after {
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%; /* Largeur de l'ovale horizontal */
+   height: 100%; /* Hauteur de l'ovale horizontal */
+   background-color: rgba(247, 153, 39, 0.3); /* La couleur #F79927 avec 50% de transparence */
+   border-radius: 90px / 30px; /* Border radius pour créer la forme d'un ovale */
+   z-index: -1;
+   overflow: hidden; /* Cacher le contenu qui dépasse de l'ovale */
+   
+}
+
+
+/* Styles spécifiques pour l'espace entre les titres de l'agrément */
+.agrement-spacer {
+   margin-bottom: 30px; /* Ajoutez de l'espace entre les éléments */
+}
+
+/* Styles spécifiques pour les Icônes svg des titres de l'agrément */
+.day-agrement {
+   
+   width:2.2em; 
+   height:2.2em;
+}
+
+/* Styles spécifiques pour les Icônes svg des titres de l'agrément */
+.day-eat {
+   
+   width:2.2em; 
+   height:2.2em;
+}
+
+ 
+ /* Styles spécifiques */
+ .agrement {
+   display: flex;
+}
+
+
+ 
+ 
+/* Frise chronologique taille icônes svg et titres */ 
+ .agrement-title { 
+
+   font-size: 18px;
+  
+ }
+
+
+/* Styles spécifiques pour "En savoir plus" */
+.poppins-bold-agrement {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103754;
+   font-size: 14px;
+ }
+
+/* Styles spécifiques pour le texte de la frise */
+.poppins-regular-agrement {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+ }
+
+ /* Styles spécifiques pour le texte en gras de la frise caché */
+ .poppins-bold-agrement-hidden {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #40413E;
+   font-size: 14px;
+ }
+
+
+/* Styles spécifiques pour le texte de la frise caché */
+ .poppins-regular-agrement-hidden {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #40413E;
+ }
+
+ 
+
+/* Styles pour la taille les icônes dans les pictogrammes */
+.icon-container img {
+   width: 50px; /* Largeur de l'icône */
+   height: 50px; /* Hauteur de l'icône */
+}
+
+
+/* Styles pour le positionnement des icônes svg et les titres de l'agrément sur la frise verticale */
+ .agrement-icon-3,
+ .agrement-icon-2,
+ .agrement-icon-1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px; /* Ajustez la position de l'icône par rapport à la ligne verticale */
+ }
+
+ .agrement-icon-3 i,
+ .agrement-icon-2 i,
+ .agrement-icon-1 i {
+   font-size: 20px; /* Ajustez la taille de l'icône */
+}
+ 
+
+/* Styles pour le fond du texte caché */
+ .agrement-description {
+   background-color: rgba(151, 211, 203, 0.5); /* La couleur #97D3CB avec 50% de transparence */
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Gardez la description cachée au chargement de la page */
+ }
+ 
+ 
+  
+/* Cachez initialement la description texte caché */
+.agrement-description {
+   display: none;
+}
+
+
+
+/* Styles pour les boutons "En savoir plus" + et - */
+.agrement-btn-toggle {
+   background-color: #F8F9F6;
+   color: #103754;
+   border: none;
+   cursor: pointer;
+}
+
+
+
+/* Page mentions-legales.html */
+
+
+#legal {
+  
+   background: linear-gradient(to bottom, #98D1CA 5%, #F8F9F6 95%); /* Création du dégradé avec bande réglable */
+   margin-bottom: 0; /* Corrige le margin-bottom négatif */
+}
+
+
+.header-main-mentions {
+   background-color: #96D2CA;
+   padding: 1px 0; /* Réduisez le padding au minimum nécessaire */
+   text-align: center;
+}
+
+.heading-main-mentions {
+   font-size: 1px; /* Utilisez une taille de police lisible, mais plus petite */
+   color: #96D2CA;
+   margin: 0; /* Supprimez les marges verticales */
+   
+}
+
+
+/* Dans votre fichier CSS */
+.heading-mentions-legales {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color: #103653;
+   font-size: 3em; /* Taille de la police relative */
+   margin-bottom: 50px; /* Marge en bas du titre */
+   margin-top: 50px; /* Marge en haut du titre */
+}
+
+@media screen and (max-width: 768px) {
+   
+   .heading-mentions-legales {
+      font-size: 2em; /* Taille de la police relative */
+   }
+   
+}
+
+
+.poppins-regular-mentions {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   font-style: normal;
+   color: #103754;
+ }
+
+ /* Styles spécifiques pour l'espace entre les titres "Routine" et "Dejeuner" et le texte */
+.mentions-spacer {
+   margin-bottom: 80px; /* Ajoutez de l'espace entre les éléments */
+}
+
+
+
